@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ddd"
+    android:padding="10dp"
+    tools:context=".LiveInformation">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ename"
+            android:text="Event Name"
+            android:textColor="#FF0707"
+            android:textSize="20dp"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/ename"
+        android:layout_above="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/live_recycler">
+
+    </android.support.v7.widget.RecyclerView>
+        <LinearLayout
+            android:id="@+id/footer"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Add Messages"
+                android:id="@+id/addmessage"
+                android:drawableLeft="@drawable/ic_mode_edit_black_24dp"
+                android:textColor="#000"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SEND"
+                android:background="#F81212"
+                android:id="@+id/send"/>
+        </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

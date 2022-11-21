@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.Create">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:background="@drawable/textbox"
+                android:id="@+id/type" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/textbox"
+                android:layout_marginTop="5dp"
+                android:hint="Event Name"
+                android:id="@+id/ename"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:hint="Basic Information"
+                android:id="@+id/synopsis"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/textbox"
+                android:maxLength="500"/>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:hint="Location"
+                        android:background="@drawable/textbox"
+                        android:id="@+id/location"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:hint="Date"
+                        android:layout_weight="1.8"
+                        android:background="@drawable/textbox"
+                        android:id="@+id/date"
+                        android:textSize="15dp"/>
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:id="@+id/datepicker"
+                        app:srcCompat="@drawable/ic_perm_contact_calendar_black_24dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:hint="Time"
+                        android:layout_weight="1.8"
+                        android:background="@drawable/textbox"
+                        android:id="@+id/time"
+                        android:textSize="15dp"/>
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:id="@+id/timepicker"
+                        app:srcCompat="@drawable/ic_access_time_black_24dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_horizontal"
+                        android:text="Image"
+                        android:textSize="18dp"
+                        android:id="@+id/images"/>
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1.0"
+                        android:id="@+id/imagepicker"
+                        app:srcCompat="@drawable/ic_image_black_24dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="37dp"
+                        android:layout_weight="1.0"
+                        android:gravity="center_horizontal"
+                        android:hint="Video link"
+                        android:drawableRight="@drawable/ic_ondemand_video_black_24dp"
+                        android:background="@drawable/textbox"
+                        android:textSize="18dp"
+                        android:id="@+id/videopicker"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:hint="Description"
+                android:maxLength="1500" />
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="If the Event is free of cost"
+                android:id="@+id/hosttype"/>
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="NEXT"
+                android:id="@+id/next"
+                android:background="@drawable/roundbutton"/>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:outlineAmbientShadowColor="#999">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/message"
+            android:text="Messages"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:layout_margin="10dp"/>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

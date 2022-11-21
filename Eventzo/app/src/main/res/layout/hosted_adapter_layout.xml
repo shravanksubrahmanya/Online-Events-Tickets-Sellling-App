@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        app:cardCornerRadius="5dp"
+        android:forceHasOverlappingRendering="false">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/event_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Event Name"
+                android:textAllCaps="true"
+                android:fontFamily="@font/maven_pro"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/event_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop" />
+
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="200"
+                android:layout_margin="5dp"
+                android:textSize="18sp"
+                app:fontFamily="@font/maven_pro" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.9dp"
+                android:background="#ddd" />
+
+            <Button
+                android:id="@+id/view_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#920C0C"
+                android:fontFamily="@font/maven_pro"
+                android:text="VIEW MORE"
+                android:textColor="#fff" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center">
+                    <ImageButton
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="30dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/ic_favorite_black_24dp"
+                        android:id="@+id/likes"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" like"
+                        android:id="@+id/nolike"
+                        android:textSize="20dp"
+                        android:textColor="#030303"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:gravity="center">
+                        <ImageButton
+                            android:layout_width="25dp"
+                            android:layout_height="35dp"
+                            android:id="@+id/comments"
+                            android:background="@drawable/ic_border_color_black_24dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Comment"
+                            android:textSize="20dp"
+                            android:id="@+id/nocomment"
+                            android:textColor="#030303"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

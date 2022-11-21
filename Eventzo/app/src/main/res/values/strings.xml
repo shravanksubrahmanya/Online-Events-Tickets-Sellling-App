@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">EventZo</string>
+    <string name="terms">"1. Data charges are applied./n" "2. Allows the user to make purchases from within this app./n" 3. Usesbone or more of: accounts on the device, profile data./n  5. Uses one or more of: files on the device, such as images, videos, or audio; the devices external storage./n 6. Allows the app to view information about Wi-Fi networking, such as whether Wi-Fi is enabled and names of the connected Wi-Fi devices.</string>
+    <string name="transaction_conditions">"1.If the transaction is not successful then you must inform the Creator of the event using given phone number./n  2. In case of any criminal activities comitted by you is considerable to take strict actions against you"</string>
+    <string name="delgrp">"Do you really want to delete this group"</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_home">Home</string>
+    <string name="title_notifications">Inbox</string>
+    <string name="account">account</string>
+    <string name="Create">Create</string>
+    <string name="Groups">Groups</string>
+    <string name="Search">Search</string>
+    <string name="Hosted">Hosted</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_uploaded_list">uploads</string>
+    <string name="title_uploaded_detail">Uploaded Detail</string>
+</resources>

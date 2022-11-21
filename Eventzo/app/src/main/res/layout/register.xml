@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/imagetoupload"
+            android:background="@drawable/ic_person_black_24dp"/>
+
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/textbox"
+            android:hint="First Name"
+            android:gravity="center"
+            android:id="@+id/fname"/>
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/textbox"
+            android:gravity="center"
+            android:hint="Last Name"
+            android:id="@+id/lname"/>
+
+         <EditText
+             android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+             android:layout_height="30dp"
+             android:background="@drawable/textbox"
+            android:hint="Email Id"
+             android:inputType="textWebEmailAddress"
+            android:gravity="center"
+            android:id="@+id/mailid" />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/textbox"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:gravity="center"
+            android:id="@+id/password" />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/textbox"
+            android:hint="Mobile No."
+            android:inputType="phone"
+            android:gravity="center"
+            android:id="@+id/mobileno"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:textSize="15sp"
+                android:textColor="#050505"
+                android:gravity="center_horizontal"/>
+        <RadioGroup
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/gender"
+            android:layout_marginLeft="20dp">
+            <RadioButton
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="Male"
+                android:textSize="15dp"
+                android:id="@+id/male"
+                android:gravity="center"
+                android:textColor="#050505"/>
+
+            <RadioButton
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:id="@+id/female"
+                android:text="Female"
+                android:gravity="center"
+                android:textColor="#050505"/>
+        </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="Date of Birth"
+            android:textColor="#050505"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:background="@drawable/textbox"
+                android:hint="Date of Birth"
+                android:layout_weight="1.8"
+                android:gravity="center_horizontal"
+                android:id="@+id/dateofbirth"
+                android:textSize="15dp"/>
+
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:id="@+id/picker"
+                    android:src="@drawable/ic_perm_contact_calendar_black_24dp"
+                    />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Terms and Conditions"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="#a605dc"
+            android:layout_marginTop="10dp"
+            android:id="@+id/termsconditions" />
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I accept terms and conditions"
+            android:textSize="17dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/checkterms"
+            android:textColor="#050505"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundbutton"
+            android:id="@+id/signup"
+            android:text="SIGN UP"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+</ScrollView>

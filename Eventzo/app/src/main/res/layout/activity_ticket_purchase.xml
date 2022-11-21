@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TicketPurchase">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:textColor="#030303"
+        android:background="@drawable/textbox"
+        android:id="@+id/tickettype" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="40"
+        android:textColor="#030303"
+        android:id="@+id/ticketprice"
+        android:textSize="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:weightSum="2">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="20dp"
+                android:text="Tickets Left"
+                android:textColor="#030303"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1.0"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="20dp"
+                android:text="Tickets Left"
+                android:id="@+id/ticketsleft"
+                android:textColor="#030303"
+                android:layout_weight="1.0"/>
+        </LinearLayout>
+
+        <EditText
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:hint="Number of tickets"
+            android:textColor="#030303"
+            android:id="@+id/numberoftickets"
+            android:background="@drawable/textbox"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1.0"
+            android:textSize="20dp"
+            android:textColor="#030303"
+            android:layout_marginLeft="5dp"
+            android:text="Total amount"/>
+
+            <EditText
+                android:layout_width="500dp"
+                android:layout_height="30dp"
+                android:layout_weight="1.0"
+                android:id="@+id/totalamount"
+                android:background="@drawable/textbox"
+                android:textSize="20dp"
+                android:textColor="#030303"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="CALCULATE"
+            android:background="@drawable/roundbutton"
+            android:layout_gravity="center"
+            android:id="@+id/calculate"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pay the required amount using google pay to the below given number."
+
+            android:textColor="#030303"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tnumber"
+            android:textColor="#030303"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Paste the Transaction ID in below given box."
+        android:textColor="#030303"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/textbox"
+            android:hint="Transaction ID"
+            android:id="@+id/transactionid"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Terms and Conditions"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="#a605dc"
+            android:layout_marginTop="10dp"
+            android:id="@+id/termsconditions" />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I accept terms and conditions"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/checkterms"
+            android:textColor="#050505"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="SUBMIT"
+            android:id="@+id/submit"
+            android:background="#E21818"/>
+    </LinearLayout>
+
+</RelativeLayout>

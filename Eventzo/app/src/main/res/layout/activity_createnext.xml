@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".createnext">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ticket Type"
+            android:textSize="20dp"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_margin="10dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:hint="Type of the ticket"
+            android:background="@drawable/textbox"
+            android:id="@+id/tickettype"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="30dp"
+            android:background="@drawable/textbox"
+            android:hint="Price of the ticket in INR"
+            android:id="@+id/price"/>
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_marginTop="5dp"
+               android:layout_height="30dp"
+               android:background="@drawable/textbox"
+               android:hint="Number of tickets"
+               android:id="@+id/noticket"/>
+
+       </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#068FFC"
+            android:text="Add one more ticket type"
+            android:textSize="20dp"
+            android:id="@+id/addone"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="NEXT"
+            android:id="@+id/next"
+            android:background="@drawable/roundbutton"/>
+
+    </LinearLayout>
+
+
+</ScrollView>
